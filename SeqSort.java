@@ -1,5 +1,5 @@
 import java.util.Random; 
-import java.util.Scanner; 
+
 public class SeqSort {
     static int searchcount=0; 
     static int sortcount=0;
@@ -43,18 +43,18 @@ public class SeqSort {
         } 
     } 
     public static void main(String[] args) { 
-        Scanner s = new Scanner(System.in); 
+        
         Random r = new Random(); 
-        System.out.print("Enter the number of elements (n > 5000): "); 
-        int n = s.nextInt(); 
+        System.out.print(" the number of elements is 4000 "); 
+        int n = 4000; 
         int[] a = new int[n]; 
         for (int i = 0; i < n; i++) { 
             a[i] = r.nextInt(10000);
         } 
         int rnd = r.nextInt(a.length); 
         System.out.println("random number is:"+a[rnd]); 
-        System.out.print("Enter the key to search: "); 
-        int key = s.nextInt(); 
+        System.out.print(" the key to search: is 200 "); 
+        int key = 200; 
         sequentialSearch(a,key);
         System.out.println("Number of basic operations for searching is: "+searchcount); 
         selectionSort(a); 
